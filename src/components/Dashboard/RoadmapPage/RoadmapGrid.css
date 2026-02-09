@@ -1,0 +1,77 @@
+.roadmap-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.roadmap-container h1 {
+  color: #ff8c00; /* Màu cam chủ đạo của Dang */
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.roadmap-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.roadmap-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #333; /* Đường nối màu đen/xám đậm */
+  z-index: 0;
+}
+
+.roadmap-card {
+  background: white;
+  border: 2px solid #333;
+  border-left: 8px solid #ff8c00; /* Nhấn mạnh bằng màu cam */
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.roadmap-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.step-tag {
+  background: #ff8c00;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.skill-item {
+  background: #eee;
+  padding: 6px 15px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+}

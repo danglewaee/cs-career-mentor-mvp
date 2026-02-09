@@ -1,0 +1,81 @@
+/* Set up the whole body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #FF7F50, #FF6347); /* Light orange to dark orange gradient */
+}
+
+/* Container for the login form */
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Title */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input groups */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect on input */
+.input-group input:focus {
+    border-color: #FF7F50; /* Orange border on focus */
+    outline: none;
+}
+
+/* Login button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF7F50; /* Orange color for the button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect on button */
+button:hover {
+    background-color: #FF6347; /* Dark orange when hovered */
+}
+
+/* Forgot password link */
+.forgot-password {
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #FF7F50; /* Orange color for the link */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
